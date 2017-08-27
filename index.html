@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Firmenverzeichnis</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!-- Fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/css" />
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+	<!-- Custom -->
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- CONTENT ============================================================================================================================== -->
+
+
+
+<!-- ===== SCROLLBAR ===== -->
+<div class="scroll-line"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-toggleable-xl navbar-inverse fixed-top" id="navigation">
+  <button class="navbar-toggler navbar-toggler-right toggler-input" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse container" id="mainNav">
+    <ul class="navbar-nav xl-auto animated bounceInLeft">
+      <li class="nav-item">
+        <a class="nav-link" href="#">home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">leistungen</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="#">about</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">kunden</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">kontakt</a>
+      </li>
+    </ul>
+  		<form class="form-inline" id="searchForm">
+	      <input class="form-control mr-sm-2" type="text" placeholder="" id="input" autocomplete="on" onfocus="clearThis(this)">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchBtn" value=""><i class="fa fa-search" aria-hidden="true"></i></button>
+	    </form>
+  </div>
+</nav>
+
+
+	<div class="container" id="content-wrapper">
+		
+		<div id="header">
+			<div id="headerTxt">
+				<h4>Unser</h4>
+				<h1>Kundenverzeichnis</h1>
+			</div><!-- #header-Txt -->
+		</div><!-- #header -->
+		
+		<div id="content" class="row">
+		</div><!-- #content -->
+
+	</div><!-- container -->
+
+<!-- THE END, MY FRIEND. =================================================================================================================== -- >
+
+<!-- SCRIPTS -->
+	<!-- Bootstrap --> 
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>	
+	<!-- JSON -->
+	<script src="companies.json"></script>
+	<!-- typed -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+	<!-- Custom -->
+	<script src="script.js"></script>
+</body>
+</html>
